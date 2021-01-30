@@ -67,7 +67,7 @@ stages:
         pytest Tests/unit_tests --junitxml=$(System.DefaultWorkingDirectory)/TestResults/test-results-unit.xml
         pip install pycmd
         py.cleanup Tests/
-        displayName: 'Run unit tests'
+      displayName: 'Run unit tests'
 
     - task: PublishTestResults@2
       inputs:        
